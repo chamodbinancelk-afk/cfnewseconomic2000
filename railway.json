@@ -1,0 +1,15 @@
+{
+  "$schema": "https://railway.app/json-schema/v3.json",
+  "deploy": {
+    "restart": "always",
+    "numReplicas": 1
+  },
+  "build": {
+    "builder": "nixpacks"
+  },
+  "start": "node src/server.js",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "3000"
+  }
+}
